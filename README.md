@@ -641,3 +641,5 @@ Reference: [Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 ![Grid](https://css-tricks.com/wp-content/uploads/2022/02/css-grid-poster.png)
 
 ### DESIGN PRINCIPLES MOBILE FIRST & RESPONSIVE DESIGN FOR ALL DEVICES
+
+![Design](design-ui-ux.svg "UI-UX Design")
