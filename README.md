@@ -643,3 +643,7 @@ Reference: [Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 ### DESIGN PRINCIPLES MOBILE FIRST & RESPONSIVE DESIGN FOR ALL DEVICES
 
 ![Design](design-ui-ux.svg "UI-UX Design")
+
+# JavaScript 
+
+![Clear-code](clear-code.png "best pratice to write clean code")
