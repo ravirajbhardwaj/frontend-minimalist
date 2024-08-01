@@ -650,4 +650,4 @@ Reference: [Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 
 ### WEB APIS and How to make Web App
 
-[Resource](https://www.notion.so/Web-APIs-037a1cd7f96248ea897c6ffcf72d02e3)
+[Essential APIs to Learn](https://www.notion.so/Web-APIs-037a1cd7f96248ea897c6ffcf72d02e3)
