@@ -647,3 +647,7 @@ Reference: [Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 # JavaScript 
 
 ![Clear-code](clear-code.png "best pratice to write clean code")
+
+### WEB APIS and How to make Web App
+
+[Resource](https://www.notion.so/Web-APIs-037a1cd7f96248ea897c6ffcf72d02e3)
