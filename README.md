@@ -6,7 +6,6 @@
 - `<header>`: Defines a header for a document or section.
 - `<h1>` to `<h6>`: Heading elements 
 - `<nav>`: Navigation links.
-- `<logo>`: Typically an image or icon representing the site's brand (not an actual HTML tag, usually an `<img>` inside a `<a>`).
 
 ### Navigation
 - `<nav>`: Navigation links.
@@ -349,135 +348,27 @@
 
 ### Input Types
 
-1. **button**:
-   - A clickable button.
-   ```html
-   <input type="button" value="Click me">
-   ```
-
-2. **checkbox**:
-    - A checkbox allowing single or multiple selections.
-    ```html
-    <input type="checkbox" name="vehicle" value="Bike"> I have a bike
-    ```
-
-3. **color**:
-    - A control for specifying a color.
-    ```html
-    <input type="color">
-    ```
-
-4. **date**:
-    - A control for entering a date.
-    ```html
-    <input type="date">
-    ```
-
-5. **datetime-local**:
-    - A control for entering a date and time.
-    ```html
-    <input type="datetime-local">
-    ```
-
-6. **email**:
-    - A control for entering an email address.
-    ```html
-    <input type="email">
-    ```
-
-7. **file**:
-    - A control that lets the user select a file.
-    ```html
-    <input type="file">
-    ```
-
-8. **hidden**:
-    - A control that is not displayed but whose value is submitted to the server.
-    ```html
-    <input type="hidden">
-    ```
-
-9. **image**:
-    - A graphical submit button.
-    ```html
-    <input type="image" src="submit.png">
-    ```
-
-10. **month**:
-    - A control for entering a month and year.
-    ```html
-    <input type="month">
-    ```
-
-11. **number**:
-    - A control for entering a number.
-    ```html
-    <input type="number">
-    ```
-
-12. **password**:
-    - A single-line text field whose value is obscured.
-    ```html
-    <input type="password">
-    ```
-
-13. **radio**:
-    - A radio button allowing single selection.
-    ```html
-    <input type="radio
-
-14. **range**:
-    - A control for entering a number whose exact value is not important.
-    ```html
-    <input type="range">
-    ```
-
-15. **reset**:
-    - A button that resets the form to its default state.
-    ```html
-    <input type="reset">
-    ```
-
-16. **search**:
-    - A single-line text field for entering search strings.
-    ```html
-    <input type="search">
-    ```
-17. **submit**:
-    - A button that submits the form.
-    ```html
-    <input type="submit">
-    ```
-
-18. **tel**:
-    - A control for entering a telephone number.
-    ```html
-    <input type="tel">
-    ```
-
-19. **text**:
-    - A single-line text field.
-    ```html
-    <input type="text">
-    ```
-
-20. **time**:
-    - A control for entering a time value.
-    ```html
-    <input type="time">
-    ```
-
-21. **url**:
-    - A control for entering a URL.
-    ```html
-    <input type="url">
-    ```
-
-22. **week**:
-    - A control for entering a week and year.
-    ```html
-    <input type="week">
-    ```
+1. **button**
+3. **color**
+4. **date**
+5. **datetime-local**
+6. **email**
+7. **file**
+8. **hidden**
+9. **image**
+10. **month**
+11. **number**
+12. **password**
+13. **radio**
+14. **range**
+15. **reset**
+16. **search**
+17. **submit**
+18. **tel**
+19. **text**
+20. **time**
+21. **url**
+22. **week**
 
 ### References
 
@@ -644,14 +535,85 @@ Reference: [Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 
 ![Design](design-ui-ux.svg "UI-UX Design")
 
-### References
+### CSS Library and Framework
 
-- [CSS frameworks or libraries](https://www.notion.so/CSS-frameworks-or-libraries-179ea3aae6e548a0886f4132401ad77e?pvs=4)
+http://tailwindcss.com/
 
+https://ui.shadcn.com/
+
+https://daisyui.com/
+
+ https://react-spectrum.adobe.com/
+
+https://shoelace.style/
+
+https://mui.com/
+
+PRO - https://ant.design/
 # JavaScript 
 
 ![Clear-code](clear-code.png "best pratice to write clean code")
 
-### WEB APIS and How to make Web App
+### Essential Web APIs to Learn basic only then move on to Library and Framework
 
-[Essential APIs to Learn](https://www.notion.so/Web-APIs-037a1cd7f96248ea897c6ffcf72d02e3)
+- **Graphics and Visualization or Document Manipulation**
+    - DOM API : Connects web pages to scripts.
+    - HTML DOM : Represents web pages.
+    - History API : Manipulates browser history.
+    - Canvas API  : Creates 2-D graphics and animations.
+    - SVG : Handles scalable vector graphics.
+    
+    Alternative :
+    
+     Libraries and Frameworks   ⇒ React js, Fabric js , Snap svg
+    
+- **Network and Communication**
+    - Fetch API : Performs network requests.
+        
+        Alternative → https://axios-http.com/docs/intro
+        
+    - Web Sockets API : Handles persistent connections for real-time communication
+        
+         Alternative → https://socket.io/ 
+        
+    - WebRTC : Handles real-time audio/video communication.
+- **User Interaction and Notifications**
+    - Geolocation API : Accesses user location data.
+        
+         https://leafletjs.com/ 
+        
+        https://mapsplatform.google.com/
+        
+    - Web Notifications API : Displays notifications.
+        
+        https://onesignal.com/
+        
+    - Pointer Events : Handles pointer events.
+- **Storage and Data Management**
+    - Web Storage API : Manages client-side storage.
+- **Audio/Video and Media**
+    - Audio/Video APIs : Handles audio and video processing.
+    - Web Audio API : Processes and synthesizes audio.
+    - WebRTC
+        - Media Capture and Streams
+        - MediaStream Recording
+
+# **How to make Web App**
+
+**User Interface** - how users will consume and interact with your application.
+
+**Routing** - how users navigate between different parts of your application.
+
+**Data Fetching** - where your data lives and how to get it.
+
+**Rendering** - when and where you render static or dynamic content.
+
+**Integrations** - what third-party services you use (for CMS, auth, payments, etc.) and how you connect to them.
+
+**Infrastructure** - where you deploy, store, and run your application code (serverless, CDN, edge, etc.).
+
+**Performance** - how to optimize your application for end-users.
+
+**Scalability** - how your application adapts as your team, data, and traffic grow.
+
+**Developer Experience** - your team's experience building and maintaining your application.
