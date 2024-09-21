@@ -65,286 +65,56 @@
 
 ### HTML Attributes
 
-1. **accept**:
-   - Used with `<input type="file">` to specify the types of files that the server accepts, which helps the user by limiting the file selection to those types only.
-   ```html
-   <input type="file" accept=".jpg, .jpeg, .png">
-   ```
-
-2. **autocomplete**:
-   - This attribute specifies whether a form or an input field should have autocomplete enabled. Autocomplete allows the browser to predict the value based on user inputs in similar fields.
-   ```html
-   <input type="text" name="email" autocomplete="email">
-   ```
-
-3. **capture**:
-   - Used with `<input type="file">` to specify that the media input should be captured directly from the device's camera or microphone, bypassing the selection of existing files.
-   ```html
-   <input type="file" capture="user">
-   ```
-
-4. **crossorigin**:
-   - This attribute is used on HTML `<img>`, `<script>`, `<link>`, and `<video>` elements to configure CORS (Cross-Origin Resource Sharing) requests for the element.
-   ```html
-   <img src="https://example.com/image.jpg" crossorigin="anonymous">
-   ```
-
-5. **dirname**:
-   - When used with `<input>` or `<textarea>`, this attribute enables the submission of the directionality of the element, allowing the server to be aware of the text direction.
-   ```html
-   <input type="text" name="text" dirname="text.dir">
-   ```
-
-6. **disabled**:
-   - Specifies that an input, select, button, or other form element is not interactive and should not be submitted with the form.
-   ```html
-   <input type="text" disabled>
-   ```
-
-7. **elementtiming**:
-   - This attribute is used to include the element in the performance timeline API for more detailed monitoring of how elements are rendered on the page.
-   ```html
-   <img src="logo.png" elementtiming="header-logo">
-   ```
-
-8. **for**:
-   - Used with `<label>` to specify which form element a label is bound to.
-   ```html
-   <label for="username">Username:</label>
-   <input type="text" id="username">
-   ```
-
-9. **max**:
-   - Specifies the maximum value for `<input>` elements of type `number`, `range`, `date`, etc.
-   ```html
-   <input type="number" max="100">
-   ```
-
-10. **maxlength**:
-    - Defines the maximum number of characters that the user can enter into `<input>` or `<textarea>`.
-    ```html
-    <input type="text" maxlength="10">
-    ```
-
-11. **min**:
-    - Specifies the minimum value for `<input>` elements of type `number`, `range`, `date`, etc.
-    ```html
-    <input type="number" min="1">
-    ```
-
-12. **minlength**:
-    - Defines the minimum number of characters required in `<input>` or `<textarea>`.
-    ```html
-    <input type="text" minlength="5">
-    ```
-
-13. **multiple**:
-    - Indicates whether multiple values can be entered in an `<input type="email">` or `<input type="file">`.
-    ```html
-    <input type="file" multiple>
-    ```
-
-14. **pattern**:
-    - Defines a regular expression against which the `<input>` value is checked.
-    ```html
-    <input type="text" pattern="[A-Za-z]{3}">
-    ```
-
-15. **placeholder**:
-    - Provides a hint to the user about what kind of information is expected in the input field.
-    ```html
-    <input type="text" placeholder="Enter your name">
-    ```
-
-16. **readonly**:
-    - Indicates that the input field is not editable, but unlike `disabled`, it will still be submitted with the form.
-    ```html
-    <input type="text" readonly value="Read-only text">
-    ```
-
-17. **rel**:
-    - Specifies the relationship between the current document and the linked document/resource. Commonly used with `<a>` and `<link>` elements.
-    ```html
-    <a href="https://example.com" rel="noopener noreferrer">Link</a>
-    ```
-
-18. **required**:
-    - Indicates that the input field must be filled out before submitting the form.
-    ```html
-    <input type="text" required>
-    ```
-
-19. **size**:
-    - Specifies the visible width, in characters, of an `<input>` element.
-    ```html
-    <input type="text" size="10">
-    ```
-
-20. **step**:
-    - Defines the legal number intervals for an `<input>` element of type `number` or `range`.
-    ```html
-    <input type="number" step="5">
-    ```
+1. **accept**: File Type Specification
+2. **autocomplete**: Autocomplete Functionality
+3. **capture**: Media Capture from Device
+4. **crossorigin**: CORS Configuration
+5. **dirname**: Text Direction Submission
+6. **disabled**: Non-Interactive Element
+7. **elementtiming**: Performance Monitoring
+8. **for**: Label Association
+9. **max**: Maximum Value Specification
+10. **maxlength**: Character Limit
+11. **min**: Minimum Value Specification
+12. **minlength**: Minimum Character Requirement
+13. **multiple**: Allow Multiple Values
+14. **pattern**: Input Validation with Regex
+15. **placeholder**: Input Hint
+16. **readonly**: Non-Editable Field
+17. **rel**: Document Relationship
+18. **required**: Mandatory Field
+19. **size**: Visible Width Specification
+20. **step**: Legal Number Intervals
 
 ### Global Attributes
 
-1. **accesskey**:
-   - Provides a hint for generating a keyboard shortcut for the current element. The browser typically uses this attribute to enable keyboard navigation.
-   ```html
-   <button accesskey="h">Help</button>
-   ```
-
-2. **anchorExperimentalNon-standard**:
-   - This is not a standard attribute and may refer to experimental or proprietary features specific to certain browsers or environments.
-
-3. **autocapitalize**:
-   - Controls whether and how text input is automatically capitalized as it is entered/edited by the user.
-   ```html
-   <input type="text" autocapitalize="words">
-   ```
-
-4. **autofocus**:
-   - This Boolean attribute lets you specify that an element should automatically get focus when the page loads.
-   ```html
-   <input type="text" autofocus>
-   ```
-
-5. **class**:
-   - Used to specify one or more classnames for an element, which can be used by CSS and JavaScript to perform various tasks.
-   ```html
-   <div class="container"></div>
-   ```
-
-6. **contenteditable**:
-   - Indicates whether the content of the element can be edited directly by the user.
-   ```html
-   <div contenteditable="true">Edit me!</div>
-   ```
-
-7. **data-***:
-   - Allows us to store custom data private to the page or application, on any HTML element.
-   ```html
-   <div data-user="12345" data-status="active"></div>
-   ```
-
-8. **dir**:
-   - Specifies the text directionality of the element's content.
-   ```html
-   <p dir="rtl">This is a paragraph in a right-to-left language.</p>
-   ```
-
-9. **draggable**:
-   - Defines whether the element can be dragged.
-   ```html
-   <img src="logo.png" draggable="true">
-   ```
-
-10. **enterkeyhint**:
-    - Provides a hint to the browser on what the enter key could do. It helps in optimizing the keyboard interface.
-    ```html
-    <input enterkeyhint="send">
-    ```
-
-11. **exportparts**:
-    - This attribute allows a custom element to expose CSS Shadow Parts in a way that they can be styled directly with stylesheets.
-    ```html
-    <my-element exportparts="partname"></my-element>
-    ```
-
-12. **hidden**:
-    - Indicates that the element is not yet, or is no longer, relevant.
-    ```html
-    <div hidden>This content is hidden.</div>
-    ```
-
-13. **id**:
-    - Defines a unique identifier for the element.
-    ```html
-    <div id="header"></div>
-    ```
-
-14. **inert**:
-    - Indicates that the element and all of its focusable descendants are not focusable.
-    ```html
-    <div inert>Content not interactive.</div>
-    ```
-
-15. **inputmode**:
-    - Provides a hint to browsers for devices with on-screen keyboards to help them decide which keyboard to display.
-    ```html
-    <input inputmode="numeric">
-    ```
-
-16. **is**:
-    - Used for attaching custom behavior to an element.
-    ```html
-    <button is="custom-button"></button>
-    ```
-
-17. **itemid**, **itemprop**, **itemref**, **itemscope**, **itemtype**:
-    - These attributes are part of the Microdata specification which allows you to nest metadata within existing content on web pages.
-    ```html
-    <div itemscope itemtype="http://schema.org/Person">
-      <span itemprop="name">Jane Doe</span>
-    </div>
-    ```
-
-18. **lang**:
-    - Specifies the language of the element’s content.
-    ```html
-    <p lang="en">Hello, world!</p>
-    ```
-
-19. **nonce**:
-    - A security feature in browsers that ensures that scripts are allowed to execute.
-    ```html
-    <script nonce="2726c7f26c">
-    ```
-
-20. **part**:
-    - Allows for style encapsulation by letting an element expose one or more parts for styling purposes.
-    ```html
-    <my-widget part="header"></my-widget>
-    ```
-
-21. **popover**:
-    - Not a standard attribute, possibly used in frameworks or libraries for UI enhancements.
-
-22. **slot**:
-    - Used in Web Components, it assigns a slot in a shadow DOM.
-    ```html
-    <span slot="header">This is a header.</span>
-    ```
-
-23. **spellcheck**:
-    - Specifies whether the element is to have its spelling and grammar checked or not.
-    ```html
-    <textarea spellcheck="true"></textarea>
-    ```
-
-24. **style**:
-    - Contains CSS styling declarations to be applied to the element.
-    ```html
-    <div style="color: blue;">This text is blue.</div>
-    ```
-
-25. **tabindex**:
-    - Indicates if its element can be focused, and if/where it participates in sequential keyboard navigation.
-    ```html
-    <div tabindex="0">Focusable Div</div>
-    ```
-
-26. **title**:
-    - Contains a text representing advisory information related to the element it belongs to.
-    ```html
-    <abbr title="Hypertext Markup Language">HTML</abbr>
-    ```
-
-27. **translate**:
-    - Specifies whether the content of an element should be translated or not.
-    ```html
-    <p translate="no">Bonjour</p>
-    ```
+1. **accesskey**: Keyboard Shortcut Hint
+2. **anchorExperimentalNon-standard**: Non-Standard Features
+3. **autocapitalize**: Text Capitalization Control
+4. **autofocus**: Automatic Focus on Load
+5. **class**: CSS Class Specification
+6. **contenteditable**: Editable Content Indicator
+7. **data-***: Custom Data Storage
+8. **dir**: Text Directionality
+9. **draggable**: Dragging Capability
+10. **enterkeyhint**: Enter Key Function Hint
+11. **exportparts**: Expose CSS Shadow Parts
+12. **hidden**: Element Relevance Status
+13. **id**: Unique Identifier
+14. **inert**: Non-Focusable Element
+15. **inputmode**: On-Screen Keyboard Hint
+16. **is**: Custom Behavior Attachment
+17. **itemid, itemprop, itemref, itemscope, itemtype**: Microdata Metadata Attributes
+18. **lang**: Language Specification
+19. **nonce**: Security Token for Scripts
+20. **part**: Style Encapsulation
+21. **popover**: UI Enhancement Attribute
+22. **slot**: Shadow DOM Slot Assignment
+23. **spellcheck**: Spelling and Grammar Check
+24. **style**: Inline CSS Styling
+25. **tabindex**: Keyboard Navigation Control
+26. **title**: Advisory Information
+27. **translate**: Content Translation Specification
 
 ### Input Types
 
